@@ -1,0 +1,44 @@
+#include <Windows.h>
+#include <stdio.h>
+struct Book {
+	int lul;
+	int pop;
+	int gog;
+};
+
+struct Page {
+	int one;
+	int two;
+};
+int main() {
+
+	struct Book Poradnik;
+	Poradnik.lul = 80;
+	Poradnik.pop = 99;
+	Poradnik.gog = 12474;
+
+	struct Book Kucharska;
+	Kucharska.gog = 444536;
+	Kucharska.lul = 990;
+	Kucharska.pop = 555;
+
+	struct Book poradnicks[33];
+	printf("%d, %d, %d\n", Kucharska.gog, Kucharska.lul, Kucharska.pop);
+
+	struct Page pages[25];
+	printf("%d, %d, %d\n ", Poradnik.lul, Poradnik.pop, Poradnik.gog);
+
+	struct Book Bookshelf[25];
+	for (int Shelf = 0;
+		Shelf < 25;
+		Shelf++) {
+		Bookshelf[Shelf].gog = Shelf;
+	}
+
+	for (int dupa=1,   ;    dupa < 10000; dupa=dupa*2)
+	{
+		printf("%d\n", dupa);
+	}
+
+
+}
